@@ -1,0 +1,91 @@
+{
+  "enabled": true,
+  "businessHours": {
+    "enabled": true,
+    "startHour": 9,
+    "startMin": 30,
+    "endHour": 19,
+    "endMin": 30,
+    "timezone": "Asia/Kolkata",
+    "afterHoursReply": "Thank you for contacting IndiaSpare.com! 🚗 Our technical sales office is currently closed (Hours: Mon-Sat, 9:30 AM - 7:30 PM IST). Your inquiry has been logged, and our team will get back to you first thing tomorrow morning. For urgent online purchases, visit https://indiaspare.com."
+  },
+  "rules": [
+    {
+      "id": "rule_welcome",
+      "name": "Greeting & Introduction",
+      "keywords": ["hi", "hello", "hey", "namaste", "good morning", "good afternoon", "salam", "ram ram"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "Welcome to IndiaSpare.com (Zero213 Ventures)! 🚗⚙️\n\nYour trusted supplier for genuine automotive & industrial spare parts with all-India express delivery.\n\nHow can our technical sales team assist you today?\n• Reply *PART* to check spare availability & fitment\n• Reply *TRACK* to check order status\n• Reply *AGENT* to speak directly with an executive.",
+      "cooldownMinutes": 15,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_parts",
+      "name": "Spare Parts & Fitment Inquiry",
+      "keywords": ["part", "spare", "clutch", "brake", "filter", "piston", "gear", "engine", "bearing", "battery", "horn", "wiper", "suspension", "turbo", "shockup", "alternator"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "Looking for a specific spare part? 🔧\n\nPlease share:\n1. *Vehicle / Machine Model* (e.g. Mahindra Bolero, Maruti Swift, JCB 3DX, Tata Ace)\n2. *Part Name or OEM Part Number*\n3. *Photo of old part* (optional)\n\nOur technical team will check warehouse stock and send you an instant quotation with GST invoice details!",
+      "cooldownMinutes": 10,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_tracking",
+      "name": "Order Tracking & Delivery Status",
+      "keywords": ["order", "status", "track", "delivery", "where is", "dispatch", "courier", "tracking", "consignment"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "📦 *IndiaSpare Consignment Tracking:*\n\nTo check your shipment status, please reply with your *Sales Order Number* (e.g. IS-1024 or SO-2026-001) or your 10-digit registered phone number.\n\nYou can also track online at: https://indiaspare.com/orders",
+      "cooldownMinutes": 10,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_pricing",
+      "name": "Price Quote & GST Invoicing",
+      "keywords": ["price", "rate", "cost", "quote", "discount", "gst", "tax", "wholesale", "bulk"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "💰 *IndiaSpare Commercial Pricing:*\n\nWe provide genuine OEM & aftermarket spares with 100% GST input tax credit invoices.\n\n• Retail customers: Competitive direct-from-warehouse prices.\n• Fleet & Garage partners: Bulk discount pricing available.\n\nPlease send your parts list for an official quotation.",
+      "cooldownMinutes": 15,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_urgent",
+      "name": "Urgent Breakdown / Same-Day Dispatch",
+      "keywords": ["urgent", "emergency", "fast", "today", "express", "asap", "immediate", "breakdown"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "⚡ *High-Priority Urgent Breakdown Alert!*\n\nFor critical machinery/vehicle breakdowns, our warehouse supports same-day air & express courier dispatch across India.\n\nYour message has been escalated to our on-duty dispatch manager right now.",
+      "cooldownMinutes": 15,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_payment",
+      "name": "Official Banking & UPI Verification",
+      "keywords": ["bank", "account", "upi", "payment", "razorpay", "pay", "neft", "rtgs", "qr code", "gpay", "phonepe"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "💳 *IndiaSpare Official Payment Modes:*\n\n• Bank: ICICI Bank / HDFC Bank\n• Account Name: Zero213 Ventures Pvt Ltd\n• UPI ID: zero213ventures@hdfcbank\n• Online: Secure card/UPI checkout at https://indiaspare.com\n\n⚠️ _Always verify account name is Zero213 Ventures Pvt Ltd before sending funds._",
+      "cooldownMinutes": 20,
+      "autoTranslateReply": true,
+      "enabled": true
+    },
+    {
+      "id": "rule_timing",
+      "name": "Working Hours & Location",
+      "keywords": ["timing", "hours", "open", "sunday", "office", "location", "address", "warehouse", "ranchi"],
+      "matchType": "contains",
+      "schedule": "all",
+      "replyText": "🕒 *IndiaSpare Operating Hours:*\n\n• Technical & Sales Support: Monday to Saturday, 9:30 AM – 7:30 PM IST\n• Warehouse Hub: Ranchi, Jharkhand, India\n• Online Portal: 24/7 online ordering at https://indiaspare.com\n• Sunday: Closed (orders placed on Sunday are dispatched Monday morning).",
+      "cooldownMinutes": 30,
+      "autoTranslateReply": true,
+      "enabled": true
+    }
+  ]
+}

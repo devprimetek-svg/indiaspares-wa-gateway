@@ -1,0 +1,5 @@
+node_modules/
+auth_info_indiaspare/
+*.log
+chats_indiaspare.json
+.DS_Store
